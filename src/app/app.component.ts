@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     this.getUsersFromService();
   }
 
-  private getUsersFromService(): void{
+  public getUsersFromService(): void{
     this.userService.getUsers().subscribe((usersData: User[]) => {
       this.users = usersData;
     });
